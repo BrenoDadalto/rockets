@@ -1,6 +1,6 @@
 # Lançamento de Foguetes
 
-Aplicação de lançamento de foguete 🚀 (**Incompleta**).
+Aplicação de lançamento de foguete 🚀 (**Incompleta/Erro**).
 
 ## Implantação
 
@@ -16,7 +16,7 @@ $ npm install cors express mongoose nodemon
 
 * [Cors](https://www.npmjs.com/package/cors#installation) para a política de segurança de http request;
 * [Express](https://expressjs.com/pt-br/starter/installing.html) gerencia rotas, utilitários HTTP e middleware;
-* [Mongoose](https://mongoosejs.com/docs/index.html) estabele a conexão com o banco de dados MongoDB;
+* [Mongoose](https://mongoosejs.com/docs/index.html) estabelece a conexão com o banco de dados MongoDB;
 * [Nodemon](https://www.npmjs.com/package/nodemon) automaticamente reinicia a aplicação em caso de alteração.
 
 A Apí executa localmente (localhost:5000) e acessa o banco de dados local MongoDB (nome da database utilizada é 'rockets').
@@ -30,7 +30,7 @@ A Apí executa localmente (localhost:5000) e acessa o banco de dados local Mongo
 Instalado algumas dependências e bibliotecas para o desenvolvimento.
 
 ```
-$ npx create-react-app rockets
+$ npx create-react-app nome-do-app
 ```
 ```
 $ npm install react-router-dom@6
@@ -43,13 +43,17 @@ $ npm install axios
 * [React Router Dom](https://reactrouter.com/docs/en/v6/getting-started/installation) usado para criar as rotas das páginas e url's da aplicação front-end;
 * [Axios](https://www.npmjs.com/package/axios#installing) cliente http para fazer requisições (usado para acessar a API criada no back-end).
 
-### 🔩 Analise os testes de ponta a ponta
+### 🔩 Rotas
 
-Explique que eles verificam esses testes e porquê.
+A aplicação web executa localmente (localhost:3000) e possui as seguintes rotas:
 
-```
-Dar exemplos
-```
+* /login - Tela de login;
+* /cadastro - Tela de cadastro;
+* /confirmar-idade - Tela que confirma a idade do usuário após login;
+* /dashboard - Tela de seleção de foguete;
+* /programar-lancamento - Tela de informe de lucro e data de lançamento;
+* /lancamentos - Tela de lançamentos realizados.
+
 
 ### ⌨️ E testes de estilo de codificação
 
