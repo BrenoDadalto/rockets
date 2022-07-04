@@ -1,26 +1,47 @@
 # Lançamento de Foguetes
 
-Aplicação de lançamento de foguete 🚀 (*Incompleta*).
+Aplicação de lançamento de foguete 🚀 (**Incompleta**).
 
 ## Implantação
 
-O projeto foi divido em 2 partes, a parte de back-end *API* e a parte de front-end *WEB*
+O projeto foi divido em 2 partes, a parte de back-end **API** e a parte de front-end **WEB**
 
-### 📋 API
+### ⚙ API
 
-A Apí executa no (localhost:5000)
-```
-Method: GET ➡ 
-```
-Instalado algumas dependências para o gerenciamento dos dados e conexão com o banco.
+Instalado algumas dependências e bibliotecas para o desenvolvimento.
 
 ```
-npm install cors express mongoose nodemon
+$ npm install cors express mongoose nodemon
 ```
 
-## ⚙️ Executando os testes
+* [Cors](https://www.npmjs.com/package/cors#installation) para a política de segurança de http request;
+* [Express](https://expressjs.com/pt-br/starter/installing.html) gerencia rotas, utilitários HTTP e middleware;
+* [Mongoose](https://mongoosejs.com/docs/index.html) estabele a conexão com o banco de dados MongoDB;
+* [Nodemon](https://www.npmjs.com/package/nodemon) automaticamente reinicia a aplicação em caso de alteração.
 
-Explicar como executar os testes automatizados para este sistema.
+A Apí executa localmente (localhost:5000) e acessa o banco de dados local MongoDB (nome da database utilizada é 'rockets').
+
+* Acessando direto a raiz localhost:5000/ pelo método GET -> rota de teste retornando uma mensagem de teste;
+* Acessando localhost:5000/usuario pelo método GET -> acesso a todos os usuários cadastrados;
+* Acessando localhost:5000/usuario pelo método POST -> insere o usuário;
+
+## 🌍 Web
+
+Instalado algumas dependências e bibliotecas para o desenvolvimento.
+
+```
+$ npx create-react-app rockets
+```
+```
+$ npm install react-router-dom@6
+```
+```
+$ npm install axios
+```
+
+* [ReactJs](https://pt-br.reactjs.org/) biblioteca usada para criar o front-end;
+* [React Router Dom](https://reactrouter.com/docs/en/v6/getting-started/installation) usado para criar as rotas das páginas e url's da aplicação front-end;
+* [Axios](https://www.npmjs.com/package/axios#installing) cliente http para fazer requisições (usado para acessar a API criada no back-end).
 
 ### 🔩 Analise os testes de ponta a ponta
 
