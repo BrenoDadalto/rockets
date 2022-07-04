@@ -25,6 +25,8 @@ A Apí executa localmente (localhost:5000) e acessa o banco de dados local Mongo
 * Acessando localhost:5000/usuario pelo método GET -> acesso a todos os usuários cadastrados;
 * Acessando localhost:5000/usuario pelo método POST -> insere o usuário;
 
+**Obs**.: Apenas as operações de read e create do usuário estão disponíveis.
+
 ## 🌍 Web
 
 Instalado algumas dependências e bibliotecas para o desenvolvimento.
@@ -54,31 +56,10 @@ A aplicação web executa localmente (localhost:3000) e possui as seguintes rota
 * /programar-lancamento - Tela de informe de lucro e data de lançamento;
 * /lancamentos - Tela de lançamentos realizados.
 
+### ❌ Erros
 
-### ⌨️ E testes de estilo de codificação
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-## 🛠️ Construído com
-
-Mencione as ferramentas que você usou para criar seu projeto
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
-
-## 🖇️ Colaborando
-
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
-
-## ✒️ Autores
-
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
+Após criar a API e tentar fazer as requisições de request para gravar no banco, tive problemas com o **cors**, com a instalação do cors no npm e mudando suas **options** o problema da request foi solucionado, porém, no console do DevTools do chrome, ele retorna um erro de status 422 (Unprocessable Entity).
 
 ## 📄 Licença
 
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
+Este projeto está sob a licença MIT Open Source - acesse o [link](https://opensource.org/licenses/MIT) para detalhes.
