@@ -1,0 +1,16 @@
+.realiza-lan-container {
+    display: flex;
+    align-items: center;
+}
+
+.lancamento-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    background-color: #dddddd;
+    border-radius: 8px;
+
+    padding: 60px 30px;
+    margin: 0 auto;
+}

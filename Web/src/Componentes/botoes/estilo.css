@@ -1,0 +1,21 @@
+button {
+    padding: 25px 15px;
+    background-color: #4BB543;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.btn-nao-lancado {
+    padding: 25px 15px;
+    background-color: #FF9494;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
